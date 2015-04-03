@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.mobiquity_challenge.CoreFunctionality" >
+
+    <Button
+        android:id="@+id/listPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="22dp"
+        android:onClick="listPhoto"
+        android:text="ListPhotos" />
+
+    <Button
+        android:id="@+id/trimSoundClip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listPhoto"
+        android:layout_alignTop="@+id/record_sound_sclip"
+        android:onClick="trimSound"
+        android:text="trim sound clip" />
+
+    <Button
+        android:id="@+id/textEditor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/record_sound_sclip"
+        android:layout_below="@+id/trimSoundClip"
+        android:layout_marginTop="47dp"
+        android:onClick="creatFile"
+        android:text="create text" />
+
+    <Button
+        android:id="@+id/record_sound_sclip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/newPhoto"
+        android:layout_below="@+id/newPhoto"
+        android:layout_marginTop="67dp"
+        android:onClick="recordSound"
+        android:text="record sound" />
+
+    <Button
+        android:id="@+id/newPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listPhoto"
+        android:layout_alignBottom="@+id/listPhoto"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp"
+        android:onClick="clickPhoto"
+        android:text="Click Photo" />
+   
+</RelativeLayout>
